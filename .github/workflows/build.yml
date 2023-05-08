@@ -17,4 +17,4 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         with:
           args: >
-              -Dsonar.projectKey="${{ env.GITHUB_REPOSITORY }}"
+              -Dsonar.projectKey="terraform-course"
