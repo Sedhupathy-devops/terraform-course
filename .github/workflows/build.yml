@@ -14,7 +14,6 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
         with:
           args: >
               -Dsonar.projectKey=${{ github.event.repository.name }}
