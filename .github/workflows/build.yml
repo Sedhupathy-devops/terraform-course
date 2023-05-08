@@ -17,4 +17,4 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         with:
           args: >
-              -Dsonar.projectKey=${{ github.repository }}
+              -Dsonar.projectKey=${{ github.event.repository.name }}
